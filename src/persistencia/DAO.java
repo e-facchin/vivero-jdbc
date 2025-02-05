@@ -73,8 +73,6 @@ public abstract class DAO {
         } catch (SQLException | ClassNotFoundException ex) {
             System.out.println(ex.getMessage());
             throw ex;
-        } finally {
-            desconectarDataBase();
         }
     }
 
